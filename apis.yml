@@ -1,8 +1,24 @@
 aid: springsource
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/springsource.png
 name: SpringSource
-description: 'SpringSource is a company surfaced as a portfolio company of accel and added to the API
-  Evangelist network as a stub for enrichment. Sector: developer-tools. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'SpringSource was the software company behind the open-source Spring Framework for
+  Java. Founded in 2004 as Interface21 by Rod Johnson and colleagues, it was venture-backed
+  (Accel, Benchmark) and acquired by VMware in 2009. The Spring portfolio subsequently moved
+  through Pivotal and VMware Tanzu and is maintained today by Broadcom. The springsource.com
+  domain now 301-redirects to spring.io, the current home of the Spring ecosystem. SpringSource
+  exposed no standalone public API of its own; this profile documents the historical company
+  and its lineage into today''s Spring projects.'
 url: https://raw.githubusercontent.com/api-evangelist/springsource/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Developer Tools
+- Java
+- Spring Framework
+- Open Source
+- Application Framework
+- Acquired
+- VMware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  name: Domain security probe (TLS/HSTS/DNSSEC/CAA/SPF/DMARC)
+  url: security/springsource-domain-security.yml
 - type: Website
   url: http://www.springsource.com
+- type: DeveloperPortal
+  name: spring.io (successor / current Spring ecosystem home)
+  url: https://spring.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
