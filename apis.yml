@@ -12,13 +12,12 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/springsource.png
 name: SpringSource
-description: 'SpringSource was the software company behind the open-source Spring Framework for
-  Java. Founded in 2004 as Interface21 by Rod Johnson and colleagues, it was venture-backed
-  (Accel, Benchmark) and acquired by VMware in 2009. The Spring portfolio subsequently moved
-  through Pivotal and VMware Tanzu and is maintained today by Broadcom. The springsource.com
-  domain now 301-redirects to spring.io, the current home of the Spring ecosystem. SpringSource
-  exposed no standalone public API of its own; this profile documents the historical company
-  and its lineage into today''s Spring projects.'
+description: SpringSource was the software company behind the open-source Spring Framework for Java. Founded in
+  2004 as Interface21 by Rod Johnson and colleagues, it was venture-backed (Accel, Benchmark) and acquired by VMware
+  in 2009. The Spring portfolio subsequently moved through Pivotal and VMware Tanzu and is maintained today by Broadcom.
+  The springsource.com domain now 301-redirects to spring.io, the current home of the Spring ecosystem. SpringSource
+  exposed no standalone public API of its own; this profile documents the historical company and its lineage into
+  today's Spring projects.
 url: https://raw.githubusercontent.com/api-evangelist/springsource/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -28,7 +27,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-08-21'
 tags:
 - Company
 - Developer Tools
@@ -54,6 +53,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/vmware/
+  name: VMware
+  x-relationship: acquisition
+  x-generated-by: broadcom-family:2026-08-21
+  x-acquired: 2009
 - type: DomainSecurity
   name: Domain security probe (TLS/HSTS/DNSSEC/CAA/SPF/DMARC)
   url: security/springsource-domain-security.yml
@@ -67,3 +72,6 @@ x-enrichment:
   status: minimal
   artifacts_added: 1
   pass: local-v1
+x-parent: vmware
+x-relationship: acquisition
+x-acquired: 2009
